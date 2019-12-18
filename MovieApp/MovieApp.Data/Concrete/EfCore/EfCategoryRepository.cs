@@ -7,10 +7,10 @@ using MovieApp.Entity;
 
 namespace MovieApp.Data.Concrete.EfCore
 {
-	class EfCategoryRepository : ICategoryRepository
+	public class EfCategoryRepository : ICategoryRepository
 	{
-		private AppContext context;
-		public EfCategoryRepository(AppContext _context)
+		private ApplicationContext context;
+		public EfCategoryRepository(ApplicationContext _context)
 		{
 			context = _context;
 		}

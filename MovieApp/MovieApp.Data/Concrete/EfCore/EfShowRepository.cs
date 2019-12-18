@@ -9,8 +9,8 @@ namespace MovieApp.Data.Concrete.EfCore
 {
 	public class EfShowRepository : IShowRepository
 	{
-		private AppContext context;
-		public EfShowRepository(AppContext _context)
+		private ApplicationContext context;
+		public EfShowRepository(ApplicationContext _context)
 		{
 			context = _context;
 		}

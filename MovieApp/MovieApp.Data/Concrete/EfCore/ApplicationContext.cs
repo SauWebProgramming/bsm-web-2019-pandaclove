@@ -5,7 +5,7 @@ using System.Text;
 using MovieApp.Entity;
 namespace MovieApp.Data.Concrete.EfCore
 {
-	public class AppContext : DbContext
+	public class ApplicationContext : DbContext
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
