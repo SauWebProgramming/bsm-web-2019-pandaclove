@@ -14,7 +14,7 @@ namespace MovieApp.Entity
 		public DateTime Date { get; set; }
 		public int CategoryId { get; set; }
 		public Category Category { get; set; }
-
-		public List<GenreShow> GenreShows { get; set; }
+		public int GenreId { get; set; }
+		public Genre Genre { get; set; }
 	}
 }
