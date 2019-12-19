@@ -43,20 +43,23 @@ namespace MovieApp.WebUI
 
 			app.UseRouting();
 			app.UseStaticFiles();
-			
-			app.UseStatusCodePages();
 			app.UseStaticFiles(new StaticFileOptions
 			{
 				FileProvider = new PhysicalFileProvider(
 				Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
 				RequestPath = "/modules"
 			});//node_modules
+			app.UseStatusCodePages();
 			app.UseEndpoints(endpoints =>
 			{
-				endpoints.MapGet("/", async context =>
-				{
-					await context.Response.WriteAsync("Hello World!");
-				});
+				endpoints.MapControllerRoute(
+						name: "AdminRoute",
+						pattern: "admin/{controller=Admin}/{action=Index}/{id?}"
+				);
+				endpoints.MapControllerRoute(
+						name: "DefaultRoute",
+						pattern: "{controller=Home}/{action=Index}/{id?}"
+					);
 			});
 		}
 	}

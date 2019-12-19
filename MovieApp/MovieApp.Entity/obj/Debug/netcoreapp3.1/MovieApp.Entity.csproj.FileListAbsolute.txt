@@ -1,0 +1,8 @@
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Entity\bin\Debug\netcoreapp3.1\MovieApp.Entity.deps.json
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Entity\bin\Debug\netcoreapp3.1\MovieApp.Entity.dll
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Entity\bin\Debug\netcoreapp3.1\MovieApp.Entity.pdb
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.csprojAssemblyReference.cache
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.AssemblyInfoInputs.cache
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.AssemblyInfo.cs
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.dll
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Entity\obj\Debug\netcoreapp3.1\MovieApp.Entity.pdb

@@ -2,3 +2,10 @@ C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\bin\D
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\obj\Debug\netcoreapp3.1\MovieApp.Data.csprojAssemblyReference.cache
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\obj\Debug\netcoreapp3.1\MovieApp.Data.AssemblyInfoInputs.cache
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\obj\Debug\netcoreapp3.1\MovieApp.Data.AssemblyInfo.cs
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\bin\Debug\netcoreapp3.1\MovieApp.Data.deps.json
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\bin\Debug\netcoreapp3.1\MovieApp.Data.dll
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\bin\Debug\netcoreapp3.1\MovieApp.Data.pdb
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\bin\Debug\netcoreapp3.1\MovieApp.Entity.pdb
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\obj\Debug\netcoreapp3.1\MovieApp.Data.csproj.CopyComplete
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\obj\Debug\netcoreapp3.1\MovieApp.Data.dll
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.Data\obj\Debug\netcoreapp3.1\MovieApp.Data.pdb
