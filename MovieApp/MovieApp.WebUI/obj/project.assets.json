@@ -3,6 +3,7 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.0": {
         "type": "package",
         "compile": {
@@ -38,6 +39,8 @@
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/3.1.0": {
 =======
+=======
+>>>>>>> parent of 4eff0a8... Comment ve User sınıfı eklendi.
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
 >>>>>>> parent of 4eff0a8... Comment ve User sınıfı eklendi.
         "type": "package",
@@ -2616,6 +2619,7 @@
   },
   "libraries": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.0": {
       "sha512": "bsnhHHiWb0s8fcLDOfTXAb0VoTT1cCRjvxo6kwi7RItOQxv/PjMx5s6BEhnAcm/+ZkrN4+2TFXhCZDuiPBfB0Q==",
       "type": "package",
@@ -2646,6 +2650,8 @@
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
       ]
     },
+=======
+>>>>>>> parent of 4eff0a8... Comment ve User sınıfı eklendi.
 =======
 >>>>>>> parent of 4eff0a8... Comment ve User sınıfı eklendi.
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
