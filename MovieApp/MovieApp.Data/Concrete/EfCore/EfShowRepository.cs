@@ -40,6 +40,11 @@ namespace MovieApp.Data.Concrete.EfCore
 			return context.Shows.FirstOrDefault(i => i.Id == showId);
 		}
 
+		public IQueryable<Comment> GetComments(int showId)
+		{
+			throw new NotImplementedException();
+		}
+
 		public void UpdateShow(Show entity)
 		{
 			context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;

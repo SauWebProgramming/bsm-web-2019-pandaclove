@@ -120,7 +120,6 @@ C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\bin\
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\bin\Debug\netcoreapp3.1\MovieApp.WebUI.Views.pdb
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\bin\Debug\netcoreapp3.1\MovieApp.Data.pdb
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\bin\Debug\netcoreapp3.1\MovieApp.Entity.pdb
-C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\Debug\netcoreapp3.1\MovieApp.WebUI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\Debug\netcoreapp3.1\MovieApp.WebUI.Views.pdb
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\Debug\netcoreapp3.1\MovieApp.WebUI.csproj.CopyComplete
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\Debug\netcoreapp3.1\MovieApp.WebUI.dll
@@ -128,3 +127,7 @@ C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Shared\_Layout.cshtml.g.cs
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\karan\source\repos\bsm-web-2019-pandaclove\MovieApp\MovieApp.WebUI\obj\Debug\netcoreapp3.1\MovieApp.WebUI.MvcApplicationPartsAssemblyInfo.cache

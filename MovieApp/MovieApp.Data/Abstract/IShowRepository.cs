@@ -12,5 +12,8 @@ namespace MovieApp.Data.Abstract
 		void AddShow(Show entity);
 		void UpdateShow(Show entity);
 		void DeleteShow(int showId);
+		IQueryable<Comment> GetComments(int showId);
+
+
 	}
 }
