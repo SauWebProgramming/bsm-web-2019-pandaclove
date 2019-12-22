@@ -1,0 +1,51 @@
+﻿@model ShowGenreCategoryViewModel
+@{
+    ViewData["Title"] = "Homepage";
+}
+
+<div class="col-lg-9 my-4">
+    <h3>Show List</h3>
+    <div class="row">
+        @foreach (var item in Model.Shows)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/img/shows/@item.Image" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">@item.Name</a>
+                        </h4>
+                        <h6>@item.Year</h6>
+                        <small>Category :
+                        @foreach(var category in Model.Categories)
+                        {
+                            if(category.Id == item.CategoryId)
+                            {
+                            <b>@category.Name</b> 
+                            }
+                        }
+                        </small>
+                        <small>Genre :
+                        @foreach(var genre in Model.Genres)
+                        {
+                            if(item.GenreId == genre.Id)
+                            {
+                            <b>@genre.Name</b> 
+                            }
+                        }
+                        </small>
+                        <p class="card-text">@item.Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+
+    </div>
+    <!-- /.row -->
+
+</div>

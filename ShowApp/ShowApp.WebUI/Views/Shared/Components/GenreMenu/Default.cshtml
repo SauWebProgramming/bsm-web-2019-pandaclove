@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Genre>
+
+<h4 class="my-4">Genres</h4>
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a href="#" class="list-group-item">@item.Name</a>
+    }
+</div>

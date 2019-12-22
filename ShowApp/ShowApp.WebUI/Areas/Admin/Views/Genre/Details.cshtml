@@ -1,0 +1,17 @@
+﻿@model Genre
+@{
+    ViewData["Title"] = "Genre Details";
+}
+
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <form method="POST" asp-action="Update" asp-controller="Genre">
+            <input type="hidden" value="@Model.Id" name="Id"/>
+            <div class="form-group">
+                <label asp-for="Name">Name</label>
+                <input asp-for="Name" />
+            </div>
+            <input type="submit" value="Update" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
