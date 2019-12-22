@@ -4,6 +4,9 @@
 <div class="list-group">
     @foreach (var item in Model)
     {
-        <a href="#" class="list-group-item">@item.Name</a>
+        <a asp-action="Index" 
+           asp-route-orderBy="Genre" 
+           asp-route-value="@item.Id" 
+           class="list-group-item">@item.Name</a>
     }
 </div>

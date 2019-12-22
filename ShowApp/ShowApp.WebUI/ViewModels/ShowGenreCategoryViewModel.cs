@@ -10,9 +10,5 @@ namespace ShowApp.WebUI.ViewModels
 	{
 		public List<Show> Shows { get; set; }
 		public List<Category> Categories { get; set; }
-		public List<Genre> Genres { get; set; }
-		public Show Show { get; set; }
-		public Category Category { get; set; }
-		public Genre Genre { get; set; }
-	}
+		public List<Genre> Genres { get; set; }	}
 }
