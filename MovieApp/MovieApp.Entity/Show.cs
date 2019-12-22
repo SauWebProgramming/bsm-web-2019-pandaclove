@@ -11,10 +11,10 @@ namespace MovieApp.Entity
 		public string Stars { get; set; }
 		public string Description { get; set; }
 		public string Image { get; set; }
-		public DateTime Date { get; set; }
+		public int Year { get; set; }
 		public int CategoryId { get; set; }
 		public Category Category { get; set; }
-
-		public List<GenreShow> GenreShows { get; set; }
+		public int GenreId { get; set; }
+		public Genre Genre { get; set; }
 	}
 }

@@ -8,6 +8,6 @@ namespace MovieApp.Entity
 	{
 		public int Id { get; set; }
 		public string Name { get; set; }
-		public List<GenreShow> GenreShows { get; set; }
+		public List<Show> Shows { get; set; }
 	}
 }

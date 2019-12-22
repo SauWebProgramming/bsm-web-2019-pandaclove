@@ -9,35 +9,24 @@ namespace MovieApp.Data.Concrete.EfCore
 {
 	public class EfCommentRepository : ICommentRepository
 	{
-		private ApplicationContext context;
-		public EfCommentRepository(ApplicationContext _context)
+		public void AddComment(Comment comment)
 		{
-			context = _context;
-		}
-		public void AddComment(Comment entity)
-		{
-			context.Comments.Add(entity);
-			context.SaveChanges();
+			throw new NotImplementedException();
 		}
 
-		public void DeleteComment(int commentId)
+		public void DeleteComment(int userId)
 		{
-			var comment = context.Comments.FirstOrDefault(i => i.Id == commentId);
-			if(comment != null)
-			{
-				context.Comments.Remove(comment);
-				context.SaveChanges();
-			}
+			throw new NotImplementedException();
 		}
 
 		public IQueryable<Comment> GetAll()
 		{
-			return context.Comments;
+			throw new NotImplementedException();
 		}
 
-		public Comment GetById(int commentId)
+		public Comment GetById(int userId)
 		{
-			return context.Comments.FirstOrDefault(i => i.Id == commentId);
+			throw new NotImplementedException();
 		}
 	}
 }

@@ -9,8 +9,8 @@ namespace MovieApp.Data.Concrete.EfCore
 {
 	public class EfShowRepository : IShowRepository
 	{
-		private ApplicationContext context;
-		public EfShowRepository(ApplicationContext _context)
+		private ApplicationDbContext context;
+		public EfShowRepository(ApplicationDbContext _context)
 		{
 			context = _context;
 		}
@@ -38,11 +38,6 @@ namespace MovieApp.Data.Concrete.EfCore
 		public Show GetById(int showId)
 		{
 			return context.Shows.FirstOrDefault(i => i.Id == showId);
-		}
-
-		public IQueryable<Comment> GetComments(int showId)
-		{
-			throw new NotImplementedException();
 		}
 
 		public void UpdateShow(Show entity)

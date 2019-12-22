@@ -8,10 +8,9 @@ namespace MovieApp.Data.Abstract
 {
 	public interface ICommentRepository
 	{
-		Comment GetById(int commentId);
+		Comment GetById(int userId);
 		IQueryable<Comment> GetAll();
-		void AddComment(Comment entity);
-		void DeleteComment(int commentId);
-
+		void AddComment(Comment comment);
+		void DeleteComment(int userId);
 	}
 }

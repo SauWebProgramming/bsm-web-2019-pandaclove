@@ -9,8 +9,8 @@ namespace MovieApp.Data.Concrete.EfCore
 {
 	public class EfGenreRepository : IGenreRepository
 	{
-		private ApplicationContext context;
-		public EfGenreRepository(ApplicationContext _context)
+		private ApplicationDbContext context;
+		public EfGenreRepository(ApplicationDbContext _context)
 		{
 			context = _context;
 		}
