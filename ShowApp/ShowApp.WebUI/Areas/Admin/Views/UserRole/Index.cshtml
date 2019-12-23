@@ -33,7 +33,7 @@
                         <td width="250">
                             <form asp-route-id="@item.Id" asp-action="Delete" method="POST">
                                 <input type="submit" class="btn btn-danger" value="Sil" />
-                                <a asp-action="Details" asp-controller="UserRole" asp-route-id="@item.Id" class="btn btn-primary">Details</a>
+                                <a asp-action="Edit" asp-controller="UserRole" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
 
                             </form>
                         </td>

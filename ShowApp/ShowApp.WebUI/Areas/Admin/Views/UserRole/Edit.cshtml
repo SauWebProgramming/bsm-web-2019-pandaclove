@@ -1,0 +1,62 @@
+﻿@model RoleDetails
+@{
+    ViewData["Title"] = "Edit Role";
+}
+
+
+<div class="row">
+    <div class="text-danger" asp-validation-summary="All"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <form method="POST" asp-action="Edit" asp-controller="UserRole">
+            <input type="hidden" name="RoleId" value="@Model.Role.Id" />
+            <input type="hidden" name="RoleName" value="@Model.Role.Name" />
+            <h6 class="bg-info p-1 text-white">
+                Add to @Model.Role.Name
+            </h6>
+            <table class="table table-striped table-bordered table-hover">
+                @if (Model.NonMembers.Count() == 0)
+                {
+                    <tr>
+                        <td colspan="2">All users are members.</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in Model.NonMembers)
+                    {
+                        <tr>
+                            <td>@item.UserName</td>
+                            <td><input type="checkbox" name="IdsToAdd" value="@item.Id" /></td>
+
+                        </tr>
+                    }
+                }
+            </table>
+            <h6 class="bg-info p-1 text-white">
+                Delete to @Model.Role.Name
+            </h6>
+            <table class="table table-striped table-bordered table-hover">
+                @if (Model.NonMembers.Count() == 0)
+                {
+                    <tr>
+                        <td colspan="2">No users are members.</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in Model.Members)
+                    {
+                        <tr>
+                            <td>@item.UserName</td>
+                            <td><input type="checkbox" name="IdsToDelete" value="@item.Id" /></td>
+
+                        </tr>
+                    }
+                }
+            </table>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using ShowApp.Data.Concrete.EfCore.Identity;
+using ShowApp.WebUI.Models;
 
 namespace ShowApp.WebUI.Areas.Admin.Controllers
 {
@@ -11,14 +13,88 @@ namespace ShowApp.WebUI.Areas.Admin.Controllers
     public class UserRoleController : Controller
     {
         private RoleManager<IdentityRole> RoleManager;
-        public UserRoleController(RoleManager<IdentityRole> roleManager)
+        private UserManager<AppUser> UserManager;
+        public UserRoleController(RoleManager<IdentityRole> roleManager,
+                                   UserManager<AppUser> userManager )
         {
             RoleManager = roleManager;
+            UserManager = userManager;
         }
         public IActionResult Index()
         {
             return View(RoleManager.Roles);
         }
+        [HttpGet]
+        public async Task<IActionResult> Edit(string id)
+        {
+            IdentityRole role = await RoleManager.FindByIdAsync(id);
+            var members = new List<AppUser>();
+            var nonmembers = new List<AppUser>();
+            foreach(var user in UserManager.Users)
+            {
+                var list = await UserManager.IsInRoleAsync(user, role.Name)
+                           ? members : nonmembers;
+                list.Add(user);
+            }
+            var model = new RoleDetails()
+            {
+                Role= role,
+                Members = members,
+                NonMembers = nonmembers
+            };
+
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(RoleEditModel model)
+        {
+            IdentityResult result;
+            if(ModelState.IsValid)
+            {
+                foreach (var item in model.IdsToAdd ?? new string[]{ })
+                {
+                    var user = await UserManager.FindByIdAsync(item);
+                    if(user != null)
+                    {
+                        result = await UserManager.AddToRoleAsync(user, model.RoleName);
+                        if(result.Succeeded)
+                        {
+                            return RedirectToAction("Index");
+                        }
+                        else
+                        {
+                            foreach(var error in result.Errors)
+                            {
+                                ModelState.AddModelError("", error.Description);
+                            }
+                        }
+                    }
+                }
+
+                foreach (var item in model.IdsToDelete ?? new string[] { })
+                {
+                    var user = await UserManager.FindByIdAsync(item);
+                    if (user != null)
+                    {
+                        result = await UserManager.RemoveFromRoleAsync(user, model.RoleName);
+                        if (result.Succeeded)
+                        {
+                            return RedirectToAction("Index");
+                        }
+                        else
+                        {
+                            foreach (var error in result.Errors)
+                            {
+                                ModelState.AddModelError("", error.Description);
+                            }
+                        }
+                    }
+                }
+
+            }
+            return RedirectToAction("Index");
+        }
+
         [HttpGet]
         public IActionResult Add()
         {
