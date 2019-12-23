@@ -12,7 +12,7 @@ using ShowApp.Entity;
 using ShowApp.WebUI.Areas.Admin.ViewModels;
 namespace ShowApp.WebUI.Areas.Admin.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class ShowController : Controller
     {

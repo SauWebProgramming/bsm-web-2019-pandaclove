@@ -31,6 +31,37 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row" style="width: 100%;">
+    <div style="width: 100%;">
+        <form method="POST"  asp-action="Add" asp-controller="Comment">
+            <div class="form-group">
+                <input type="hidden" name="ShowId" value="@Model.Id" />
+                <input type="hidden" name="UserId" value="@User.FindFirst(ClaimTypes.NameIdentifier).Value" />
+                <label for="comment">Your Comment : </label>
+                <textarea name="Content" class="form-control" id="comment" placeholder="Enter your comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</div>
+
+<div class="row">
+    <h3>Comments(1)</h3>
+
+    <div class="comments-list">
+        <div class="media">
+            <a class="media-left" href="#">
+                <img class="avatar" src="http://lorempixel.com/80/80/people/1/">
+            </a>
+            <div class="media-body" style="padding-left: 10px; padding-top:10px">
+                <h4 class="media-heading user_name">Baltej Singh <small> / 22 Aralık 2018</small></h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis exercitationem vero dicta, aspernatur laudantium nam libero non repudiandae nemo ullam nulla magnam quia veniam distinctio cumque tempora accusantium aliquam voluptate? Doloremque alias molestiae quos fuga eius quis magnam ducimus placeat odit, ratione nulla quo quasi animi officiis pariatur impedit blanditiis quisquam hic porro facere! Non!
+            </div>
         </div>
     </div>
+</div>
+
+   
 

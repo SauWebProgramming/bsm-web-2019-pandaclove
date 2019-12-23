@@ -67,8 +67,8 @@ namespace ShowApp.WebUI
 				Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
 				RequestPath = "/modules"
 			});//node_modules
-			app.UseAuthorization();
 			app.UseAuthentication();
+			app.UseAuthorization();
 			app.UseStatusCodePages();
 			app.UseEndpoints(endpoints =>
 			{

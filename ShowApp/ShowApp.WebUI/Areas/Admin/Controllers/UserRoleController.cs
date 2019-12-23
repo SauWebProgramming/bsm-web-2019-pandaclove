@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ShowApp.Data.Concrete.EfCore.Identity;
@@ -9,6 +10,7 @@ using ShowApp.WebUI.Models;
 
 namespace ShowApp.WebUI.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class UserRoleController : Controller
     {

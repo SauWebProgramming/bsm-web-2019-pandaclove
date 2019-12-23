@@ -13,7 +13,7 @@ using ShowApp.WebUI.Areas.Admin.Models;
 
 namespace ShowApp.WebUI.Areas.Admin.Controllers
 {
-   // [Authorize]
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class UserController : Controller
     {

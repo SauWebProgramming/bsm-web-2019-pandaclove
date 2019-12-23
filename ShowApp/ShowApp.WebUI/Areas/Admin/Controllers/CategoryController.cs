@@ -9,7 +9,7 @@ using ShowApp.Entity;
 
 namespace ShowApp.WebUI.Areas.Admin.Controllers
 {
-   // [Authorize]
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class CategoryController : Controller
     {
