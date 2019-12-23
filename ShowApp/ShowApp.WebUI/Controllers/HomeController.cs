@@ -44,5 +44,9 @@ namespace ShowApp.WebUI.Controllers
             return View(viewModel);
 
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
     }
 }

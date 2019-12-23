@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>@ViewData["Title"]  -ShowComment</title>
+    <title>@ViewData["Title"] - ShowComment</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core ReCSS -->
     <link href="~/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -40,16 +41,38 @@
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Giriş Yap
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Üye Ol</a>
-                    </li>
-                </ul>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                Welcome, @User.Identity.Name
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Logout" asp-controller="Account">
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                } else {
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Login" asp-controller="Account">
+                        Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Register" asp-controller="Account">
+                        Register
+                    </a>
+                </li>
+            </ul>
+                }
+
+
+
             </div>
         </div>
     </nav>

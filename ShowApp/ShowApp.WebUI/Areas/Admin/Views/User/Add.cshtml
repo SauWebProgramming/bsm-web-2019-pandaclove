@@ -1,0 +1,29 @@
+﻿@model RegisterModel
+@{
+    ViewData["Title"] = "Add User";
+}
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <form method="POST" asp-action="Add" asp-controller="User" enctype="multipart/form-data">
+                <div class="text-danger" asp-validation-summary="All"></div>
+                <div class="form-group">
+                    <label asp-for="UserName">UserName</label>
+                    <input class="form-control" asp-for="UserName" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email">Email</label>
+                    <input class="form-control" asp-for="Email" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password">Password</label>
+                    <input class="form-control" asp-for="Password" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Image">Image</label>
+                    <input  name="file" id="file" class="form-control" type="file">
+                </div>
+                <input type="submit" value="Add" class="btn btn-success" />
+            </form>
+        </div>
+    </div>

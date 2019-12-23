@@ -1,0 +1,16 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Add User Role";
+}
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <form method="POST" asp-action="Add" asp-controller="UserRole">
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input id="Name" type="text" name="Name" />
+            </div>
+            <input type="submit" value="Add" class="btn btn-success" />
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<IdentityRole>
+@{
+    ViewData["Title"] = "User Role Manager";
+}
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <a asp-controller="UserRole" asp-action="Add" class="btn btn-success">Add Role</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <td>Role ID</td>
+                    <td>Role Name</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td identity-role="@item.Id">@item.Name</td>
+                        <td width="250">
+                            <form asp-route-id="@item.Id" asp-action="Delete" method="POST">
+                                <input type="submit" class="btn btn-danger" value="Sil" />
+                                <a asp-action="Details" asp-controller="UserRole" asp-route-id="@item.Id" class="btn btn-primary">Details</a>
+
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
