@@ -45,30 +45,24 @@
 
 
                     <li>
-                        <a href="index.html"><i class="fa fa-desktop "></i>Homepage</a>
+                        <a asp-controller="Home" asp-action="Index"><i class="fa fa-desktop "></i>Homepage</a>
                     </li>
 
 
                     <li>
-                        <a href="ui.html"><i class="fa fa-table "></i>Shows</a>
+                        <a asp-controller="Show" asp-action="List"><i class="fa fa-table "></i>Shows</a>
                     </li>
                     <li class="active-link">
-                        <a href="blank.html"><i class="fa fa-edit "></i>Genres</a>
+                        <a asp-controller="Genre" asp-action="List"><i class="fa fa-edit "></i>Genres</a>
                     </li>
 
                     <li>
-                        <a href="#"><i class="fa fa-qrcode "></i>Categories</a>
+                        <a asp-controller="Category" asp-action="List"><i class="fa fa-qrcode "></i>Categories</a>
                     </li>
 
 
                     <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i>Users</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit "></i>Comments </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit "></i>Site Settings </a>
+                        <a asp-controller="User" asp-action="List"><i class="fa fa-bar-chart-o"></i>Users</a>
                     </li>
                 </ul>
             </div>

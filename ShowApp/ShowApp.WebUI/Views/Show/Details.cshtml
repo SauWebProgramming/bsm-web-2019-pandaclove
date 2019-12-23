@@ -36,10 +36,8 @@
     <div style="width: 100%;">
         <form method="POST"  asp-action="Add" asp-controller="Comment">
             <div class="form-group">
-                <input type="hidden" name="ShowId" value="@Model.Id" />
-                <input type="hidden" name="UserId" value="@User.FindFirst(ClaimTypes.NameIdentifier).Value" />
                 <label for="comment">Your Comment : </label>
-                <textarea name="Content" class="form-control" id="comment" placeholder="Enter your comment"></textarea>
+                <textarea  class="form-control" id="comment" placeholder="Enter your comment"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
